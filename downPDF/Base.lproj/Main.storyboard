@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="27Q-yt-K33">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="1dI-e1-xIj">
+            <objects>
+                <navigationController id="27Q-yt-K33" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DBM-U3-iYt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KzG-au-J8N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fFw-rW-ydn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1211" y="105"/>
+        </scene>
+        <!--PDF-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="PDF" id="srA-HB-uEg">
+                        <barButtonItem key="rightBarButtonItem" title="Photo" id="Yny-2s-K2u">
+                            <connections>
+                                <segue destination="HOd-rk-ZoV" kind="push" id="Jsx-RP-Qib"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-337" y="96"/>
+        </scene>
+        <!--Pricture-->
+        <scene sceneID="yfd-sL-1Xq">
+            <objects>
+                <viewController id="HOd-rk-ZoV" customClass="PictureViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vHQ-WS-gBH"/>
+                        <viewControllerLayoutGuide type="bottom" id="zCW-Cv-Uob"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Peb-Hk-9CM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pricture" id="hfT-NP-bUg">
+                        <barButtonItem key="rightBarButtonItem" title="Video" id="xy8-Ub-ZwP">
+                            <connections>
+                                <segue destination="kua-Ou-zdj" kind="push" id="4xU-qw-nGK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rYA-qr-T0L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="670" y="96"/>
+        </scene>
+        <!--Video-->
+        <scene sceneID="3tr-WH-8Yn">
+            <objects>
+                <viewController id="kua-Ou-zdj" customClass="VideoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aHG-6B-HDC"/>
+                        <viewControllerLayoutGuide type="bottom" id="1tQ-GE-57l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aAJ-OO-z73">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3s-df-LBb">
+                                <rect key="frame" x="16" y="189" width="343" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="JGt-P6-ZZ2"/>
+                                </constraints>
+                                <state key="normal" title="下载"/>
+                                <connections>
+                                    <action selector="downVideo:" destination="kua-Ou-zdj" eventType="touchUpInside" id="Yxd-bx-RDz"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q2B-df-Uie">
+                                <rect key="frame" x="0.0" y="312" width="375" height="355"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xAp-0U-RsO">
+                                <rect key="frame" x="96" y="149" width="150" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="g8H-LH-Hff"/>
+                                    <constraint firstAttribute="height" constant="2" id="y86-66-yVb"/>
+                                </constraints>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="J3s-df-LBb" secondAttribute="trailing" id="1Q8-18-WvN"/>
+                            <constraint firstItem="Q2B-df-Uie" firstAttribute="leading" secondItem="aAJ-OO-z73" secondAttribute="leading" id="48S-ru-cac"/>
+                            <constraint firstItem="J3s-df-LBb" firstAttribute="top" secondItem="xAp-0U-RsO" secondAttribute="bottom" constant="38" id="7YM-SV-jaD"/>
+                            <constraint firstAttribute="trailing" secondItem="Q2B-df-Uie" secondAttribute="trailing" id="IaJ-ec-YbI"/>
+                            <constraint firstItem="J3s-df-LBb" firstAttribute="leading" secondItem="aAJ-OO-z73" secondAttribute="leadingMargin" id="X05-x6-DqE"/>
+                            <constraint firstItem="xAp-0U-RsO" firstAttribute="top" secondItem="aHG-6B-HDC" secondAttribute="bottom" constant="85" id="Ych-TR-9BA"/>
+                            <constraint firstItem="xAp-0U-RsO" firstAttribute="leading" secondItem="aAJ-OO-z73" secondAttribute="leadingMargin" constant="80" id="f3S-bT-3CC"/>
+                            <constraint firstItem="Q2B-df-Uie" firstAttribute="top" secondItem="J3s-df-LBb" secondAttribute="bottom" constant="100" id="lzU-ab-SUh"/>
+                            <constraint firstItem="1tQ-GE-57l" firstAttribute="top" secondItem="Q2B-df-Uie" secondAttribute="bottom" id="vE9-gh-BTL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Video" id="T6S-QN-YTf"/>
+                    <connections>
+                        <outlet property="downBtn" destination="J3s-df-LBb" id="ta2-QQ-80G"/>
+                        <outlet property="progressView" destination="xAp-0U-RsO" id="I8O-MT-WNK"/>
+                        <outlet property="videoView" destination="Q2B-df-Uie" id="6w4-Zh-34M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="84Y-k5-O42" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1568.8" y="95.802098950524751"/>
+        </scene>
+    </scenes>
+</document>
